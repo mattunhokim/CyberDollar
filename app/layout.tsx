@@ -12,7 +12,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 export const metadata: Metadata = {
   title: "CyberDollar",
-  description: "CyberDollar is a modern banking platform for everyone",
+  description: " ",
   icons: {
     icon: "/icons/logo.svg",
   },
