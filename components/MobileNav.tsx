@@ -15,12 +15,13 @@ import {
 import { sidebarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+import Footer from "@/components/Footer";
 
 const MobileNav = ({ user }: MobileNavProps) => {
   const pathName = usePathname();
 
   return (
-    <section className="w-full max-w-[264px]0">
+    <section className="w-full max-w-[264px]">
       <Sheet>
         <SheetTrigger>
           <Image
@@ -86,7 +87,7 @@ const MobileNav = ({ user }: MobileNavProps) => {
                 USER
               </nav>
             </SheetClose>
-            FOOTER
+            <Footer user={user} type="mobile" />
           </div>
         </SheetContent>
       </Sheet>
